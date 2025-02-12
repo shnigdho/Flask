@@ -79,10 +79,10 @@
   </head>
   <body>
     <div class="container">
-      <img src="../static/logo.png" alt="Lexus" class="logo" />
-      {% if message %}
+      <img src="../static/berger_logo.png" alt="Lexus" class="logo" />
+      <!-- {% if message %}
       <p class="message">{{ message | safe }}</p>
-      {% endif %}
+      {% endif %} -->
       <form action="/submit" method="POST">
         <div class="form-group">
           <h3>Customer Name</h3>
@@ -90,11 +90,11 @@
         </div>
         <div class="form-group">
           <h3>Mobile Number</h3>
-          <input type="text" name="customer_1" placeholder="Mobile No." required />
+          <input type="text" name="mobile" placeholder="Mobile No." required />
         </div>
         <div class="form-group">
-          <h3>HRN Number</h3>
-          <input type="text" name="customer_2" placeholder="HRN Number" required />
+          <h3>Area</h3>
+          <input type="text" name="HRN" placeholder="Area" required />
         </div>
         <input type="submit" value="Submit" class="btn" />
       </form>
